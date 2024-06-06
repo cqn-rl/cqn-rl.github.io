@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Continuous Control with Coarse-to-fine Q-Network.">
+  <meta name="keywords" content="CQN">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Continuous Control with Coarse-to-fine Q-Network</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Continuous Control with Coarse-to-fine Q-Network</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Anonymous Authors</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Despite recent advances in improving the sample-efficiency of reinforcement learning (RL) algorithms,
+              designing an RL algorithm that can be practically deployed in real-world environments remains a challenge.
+              In this paper, we present Coarse-to-fine Reinforcement Learning (CRL), a framework that trains RL agents
+              to zoom-into a continuous action space in a coarse-to-fine manner, enabling the use of
+              stable, sample-efficient value-based RL algorithms for fine-grained continuous control tasks.
+              Our key idea is to train agents that output actions by iterating the procedure of (i) discretizing the
+              continuous action space into multiple intervals and (ii) selecting the interval with the highest Q-value
+              to further discretize at the next level.
+              We then introduce a concrete, value-based algorithm within the CRL framework called Coarse-to-fine
+              Q-Network (CQN).
+              Our experiments demonstrate that CQN significantly outperforms RL and behavior cloning baselines on 20
+              sparsely-rewarded RLBench manipulation tasks with a modest number of environment interactions and expert
+              demonstrations.
+              We also show that CQN robustly learns to solve real-world manipulation tasks within a few minutes of
+              online training.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column">
+              <div class="content has-text-centered">
+                <p>
+                  Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> made
+                  by
+                  the amazing <a href="https://keunhong.com/">Keunhong Park</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+</body>
+
+</html>
