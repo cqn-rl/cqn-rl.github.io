@@ -44,12 +44,26 @@
   </section>
 
   <section class="section">
+
+    <!-- Main Video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/22RijBzSFJo?rel=0&amp;showinfo=0" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section">
     <section class="hero is-light">
       <br>
       <div class="container is-max-desktop">
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered">
-          <div class="column" style="padding: 0 40px;">
+          <div class="column" style="padding: 0 20px;">
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
@@ -64,6 +78,8 @@
                 to further discretize at the next level.
                 We then introduce a concrete, value-based algorithm within the CRL framework called Coarse-to-fine
                 Q-Network (CQN).
+              </p>
+              <p>
                 Our experiments demonstrate that CQN significantly outperforms RL and behavior cloning baselines on 20
                 sparsely-rewarded RLBench manipulation tasks with a modest number of environment interactions and expert
                 demonstrations.
@@ -122,13 +138,13 @@
               </p>
             </div>
             <div class="content has-text-centered">
-              <video id="replay-video" autoplay controls muted loop preload playsinline width="75%">
+              <video id="replay-video" autoplay muted loop preload playsinline width="75%">
                 <source src="./static/videos/open_drawer.mp4" type="video/mp4">
               </video>
-              <video id="replay-video" autoplay controls muted loop preload playsinline width="75%">
+              <video id="replay-video" autoplay muted loop preload playsinline width="75%">
                 <source src="./static/videos/take_plate_off_colored_dish_rack.mp4" type="video/mp4">
               </video>
-              <video id="replay-video" autoplay controls muted loop preload playsinline width="75%">
+              <video id="replay-video" autoplay muted loop preload playsinline width="75%">
                 <source src="./static/videos/sweep_to_dustpan.mp4" type="video/mp4">
               </video>
             </div>
@@ -155,19 +171,19 @@
             </div>
             <div class="content has-text-centered">
               <p>Open Drawer and Put Teddy in Drawer</p>
-              <video id="replay-video" controls muted preload playsinline width="75%">
+              <video id="replay-video" controls muted playsinline width="75%">
                 <source src="./static/videos/teddy_rwrl.mp4" type="video/mp4">
               </video>
               <p><br>Click Button</p>
-              <video id="replay-video" controls muted preload playsinline width="75%">
+              <video id="replay-video" controls muted playsinline width="75%">
                 <source src="./static/videos/button_rwrl.mp4" type="video/mp4">
               </video>
               <p><br>Take Lid Off Saucepan</p>
-              <video id="replay-video" controls muted preload playsinline width="75%">
+              <video id="replay-video" controls muted playsinline width="75%">
                 <source src="./static/videos/saucepan_rwrl.mp4" type="video/mp4">
               </video>
               <p><br>Flip Cup</p>
-              <video id="replay-video" controls muted preload playsinline width="75%">
+              <video id="replay-video" controls muted playsinline width="75%">
                 <source src="./static/videos/cup_rwrl.mp4" type="video/mp4">
               </video>
             </div>
